@@ -10,8 +10,17 @@ import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 const Testimoni = ({
   listTestimoni = [
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
+      name: "Andres Traumann",
+      image: "/assets/team1.jpg",
+      city: "Bangkok",
+      country: "Thailand",
+      rating: "4.5",
+      testimoni:
+        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+    },
+    {
+      name: "Nuttida Parin",
+      image: "/assets/team2.jpeg",
       city: "Warsaw",
       country: "Poland",
       rating: "4.5",
@@ -19,8 +28,8 @@ const Testimoni = ({
         "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
+      name: "Parunyu Robert",
+      image: "/assets/team3.jpeg",
       city: "Warsaw",
       country: "Poland",
       rating: "4.5",
@@ -28,8 +37,8 @@ const Testimoni = ({
         "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
+      name: "Jantapa Binheem",
+      image: "/assets/team4.jpeg",
       city: "Warsaw",
       country: "Poland",
       rating: "4.5",
@@ -37,8 +46,8 @@ const Testimoni = ({
         "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
+      name: "Suthisak Salika",
+      image: "/assets/team5.jpeg",
       city: "Warsaw",
       country: "Poland",
       rating: "4.5",
@@ -95,6 +104,7 @@ const Testimoni = ({
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
                   <Image
+                    className="rounded-full"
                     src={listTestimonis.image}
                     height={50}
                     width={50}
@@ -122,7 +132,7 @@ const Testimoni = ({
         ))}
       </Slider>
       <div className="flex w-full items-center justify-end">
-        <div className="flex flex-none justify-between w-auto mt-14">
+        <div className="flex flex-none justify-between w-auto mt-28 lg:mt-14">
           <div
             className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-green-200 border hover:bg-green-200 hover:text-white-500 transition-all text-green-200 cursor-pointer"
             onClick={sliderRef?.slickPrev}
