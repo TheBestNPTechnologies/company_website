@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import ButtonPrimary from "./misc/ButtonPrimary";
+import { useTranslation } from "next-i18next";
+
 const Hero = ({
   listUser = [
     {
@@ -20,18 +22,21 @@ const Hero = ({
     },
   ],
 }) => {
+  const { t } = useTranslation("common");
   return (
     <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id="about">
       <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16 ">
         <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-            Want anything to be easy with <strong className="text-green-200">TheBEST NP .</strong>
+            <strong className="text-green-200">
+              {t("description_banner.1")}
+            </strong>
           </h1>
           <p className="text-black-500 mt-4 mb-6">
-            Provide a website for all your needs with ease and fun using
-            The Best NP Technologies discover interesting features from us.
+            {t("description_banner.2")}
+            {t("description_banner.3")}
           </p>
-          <ButtonPrimary>Get Started</ButtonPrimary>
+          <ButtonPrimary>{t('get_start')}</ButtonPrimary>
         </div>
         <div className="flex w-full">
           <div className="h-full w-full">
