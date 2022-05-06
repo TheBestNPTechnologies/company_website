@@ -3,6 +3,7 @@ import Feature from "../components/Feature";
 import Pricing from "../components/Pricing";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Home() {
   return (
@@ -18,4 +19,17 @@ export default function Home() {
       </Layout>
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        "home",
+        "common",
+        "navbar",
+        "footer",
+      ])),
+    },
+  };
 }

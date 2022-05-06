@@ -1,0 +1,21 @@
+{
+    "header": "The BEST NP Technologies",
+    "about": "About",
+    "work": "Work",
+    "service": "Service",
+    "contact_us": "Contact Us",
+    "description_banner": {
+        "1": "The Best NP Technologies",
+        "2": "offers software development services to other companies.",
+        "3": "We offer a full set of services including software development, consultation, project planning, software testing, maintenance and system administration.",
+        "4": "We Provide Many Features You Can Use",
+        "5": "You can explore the features that we provide with fun and have their own functions each feature."
+    },
+    "get_start": "Get Started",
+    "services": {
+        "1": "Web Application",
+        "2": "Mobile Application",
+        "3": "Cloud Server",
+        "4": "Internet of Things"
+    }
+}
