@@ -122,7 +122,7 @@ const Testimoni = ({
                     <Stars className="h-4 w-4" />
                   </span>
                 </div>
-              </div>{console.log("K : ",listTestimonis.testimoni )}
+              </div>
               <p className="mt-5 text-left">{t(`${listTestimonis.testimoni}`)}</p>
             </div>
           </div>
