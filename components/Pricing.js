@@ -4,8 +4,11 @@ import Testimoni from "./Testimoni";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import ButtonOutline from "./misc/ButtonOutline.";
 import Maps from "../public/assets/HugeGlobal.svg";
+import { useTranslation } from "next-i18next";
 
 const Pricing = () => {
+  const { t } = useTranslation("common");
+
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
@@ -14,24 +17,23 @@ const Pricing = () => {
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed">
-            My Work Company
+            {t("my_work.topic")}
           </h3>
           <p className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center">
-            Let's look at the company work that is best for you and explore it
-            happily and cheerfully.
+            {t("my_work.description")}
           </p>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <div className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                 <Image
-                  src="/assets/Free.png"
+                  src="/assets/software.png"
                   width={145}
                   height={165}
                   alt="Free Plan"
                 />
               </div>
-              <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                Free Plan
+              <p className="text-lg whitespace-nowrap	text-black-600 font-medium capitalize my-2 sm:my-7">
+                {t("my_work.plan_1")}
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                 <li className="relative check custom-list my-2">
@@ -47,24 +49,24 @@ const Pricing = () => {
                   Works on All Devices
                 </li>
               </ul>
-              <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
+              {/* <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                 <p className="text-2xl text-black-600 text-center mb-4 ">
                   Free
                 </p>
                 <ButtonOutline>Select</ButtonOutline>
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                 <Image
-                  src="/assets/Standard.png"
+                  src="/assets/web.png"
                   width={145}
                   height={165}
                   alt="Standard Plan"
                 />
               </div>
-              <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                Standard Plan{" "}
+              <p className="text-lg whitespace-nowrap	text-black-600 font-medium capitalize my-2 sm:my-7">
+                {t("my_work.plan_2")}
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                 <li className="relative check custom-list my-2">
@@ -83,24 +85,24 @@ const Pricing = () => {
                   Connect Anyware{" "}
                 </li>
               </ul>
-              <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
+              {/* <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                 <p className="text-2xl text-black-600 text-center mb-4 ">
                   $9 <span className="text-black-500">/ mo</span>
                 </p>
                 <ButtonOutline>Select</ButtonOutline>
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                 <Image
-                  src="/assets/Premium.png"
+                  src="/assets/mobile.png"
                   width={145}
                   height={165}
                   alt="Premium Plan"
                 />
               </div>
-              <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                Premium Plan{" "}
+              <p className="text-lg whitespace-nowrap	text-black-600 font-medium capitalize my-2 sm:my-7">
+                {t("my_work.plan_3")}
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                 <li className="relative check custom-list my-2">
@@ -122,23 +124,22 @@ const Pricing = () => {
                   Get New Features{" "}
                 </li>
               </ul>
-              <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
+              {/* <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                 <p className="text-2xl text-black-600 text-center mb-4 ">
                   $12 <span className="text-black-500">/ mo</span>
                 </p>
 
                 <ButtonOutline>Select</ButtonOutline>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
         <div className="flex flex-col w-full my-10">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
-            Huge Global Network of Fast VPN{" "}
+          <h3 className="text-2xl sm:text-3xl whitespace-nowrap	lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12  sm:w-6/12 lg:w-4/12 mx-auto">
+            {t("header")}
           </h3>
           <p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12">
-            See LaslesVPN everywhere to make it easier for you when you move
-            locations.
+            {t("sub_title")}
           </p>
           <div className="py-12 w-full px-8 mt-16">
             <img
@@ -178,19 +179,18 @@ const Pricing = () => {
         </div>
         <div className="flex flex-col w-full" id="testimoni">
           <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
-            Trusted by Thousands of Happy Customer{" "}
+            {t("sub_title_2")}
           </h3>
           <p className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12">
-            These are the stories of our customers who have joined us with great
-            pleasure when using this crazy feature.
+            {t("sub_title")}
           </p>
           <div className="w-full flex flex-col py-12">
             <Testimoni />
           </div>
         </div>
         <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
-            Contact Us{" "}
-          </h3>
+          Contact Us{" "}
+        </h3>
         <div className="w-full lg:pl-40 lg:pr-40 sm:pr-0 sm:pl-0 flex justify-evenly w-full items-center mt-4 flex-wrap lg:flex-nowrap">
           <form class="rounded-lg shadow-xl flex w-full flex-col px-8 py-8 bg-white dark:bg-blue-500">
             <label

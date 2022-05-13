@@ -17,5 +17,21 @@
         "2": "Mobile Application",
         "3": "Cloud Server",
         "4": "Internet of Things"
+    },
+    "my_work": {
+        "topic": "My Work Company",
+        "description": "Let's look at the company work that is best for you and explore it happily and cheerfully.",
+        "plan_1": "Software System",
+        "plan_2": "Web Application",
+        "plan_3": "Mobile Application"
+    },
+    "sub_title": "See TheBestNP everywhere to make it easier for you when you want to create website.",
+    "sub_title_2": "My Team",
+    "team" : {
+        "team_1" : "Chief Executive Officer",
+        "team_2" : "Human Resource",
+        "team_3" : "Software Developer",
+        "team_4" : "Software Developer",
+        "team_5" : "Software Developer"
     }
 }

@@ -6,6 +6,7 @@ import Image from "next/image";
 import Stars from "../public/assets/Icon/stars.svg";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
+import { useTranslation } from "next-i18next";
 
 const Testimoni = ({
   listTestimoni = [
@@ -15,44 +16,39 @@ const Testimoni = ({
       city: "Bangkok",
       country: "Thailand",
       rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      testimoni: "team.team_1",
     },
     {
       name: "Nuttida Parin",
       image: "/assets/team2.jpeg",
-      city: "Warsaw",
-      country: "Poland",
+      city: "Bangkok",
+      country: "Thailand",
       rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      testimoni: "team.team_2",
     },
     {
       name: "Parunyu Robert",
       image: "/assets/team3.jpeg",
-      city: "Warsaw",
-      country: "Poland",
+      city: "Bangkok",
+      country: "Thailand",
       rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      testimoni: "team.team_3",
     },
     {
       name: "Jantapa Binheem",
       image: "/assets/team4.jpeg",
-      city: "Warsaw",
-      country: "Poland",
+      city: "Bangkok",
+      country: "Thailand",
       rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      testimoni: "team.team_4",
     },
     {
       name: "Suthisak Salika",
       image: "/assets/team5.jpeg",
-      city: "Warsaw",
-      country: "Poland",
+      city: "Bangkok",
+      country: "Thailand",
       rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      testimoni: "team.team_5",
     },
   ],
 }) => {
@@ -89,6 +85,7 @@ const Testimoni = ({
     ],
   };
   const [sliderRef, setSliderRef] = useState(null);
+  const { t } = useTranslation("common");
 
   return (
     <>
@@ -125,8 +122,8 @@ const Testimoni = ({
                     <Stars className="h-4 w-4" />
                   </span>
                 </div>
-              </div>
-              <p className="mt-5 text-left">“{listTestimonis.testimoni}”.</p>
+              </div>{console.log("K : ",listTestimonis.testimoni )}
+              <p className="mt-5 text-left">{t(`${listTestimonis.testimoni}`)}</p>
             </div>
           </div>
         ))}
