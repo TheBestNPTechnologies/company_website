@@ -37,16 +37,16 @@ const Pricing = () => {
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                 <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
+                  {t("our_service.softeware.1")}
                 </li>
                 <li className="relative check custom-list my-2">
-                  Encrypted Connection
+                  {t("our_service.softeware.2")}
                 </li>
                 <li className="relative check custom-list my-2">
-                  No Traffic Logs
+                  {t("our_service.softeware.3")}
                 </li>
                 <li className="relative check custom-list my-2">
-                  Works on All Devices
+                  {t("our_service.softeware.8")}
                 </li>
               </ul>
               {/* <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
@@ -70,19 +70,19 @@ const Pricing = () => {
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                 <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
+                  {t("our_service.softeware.1")}
                 </li>
                 <li className="relative check custom-list my-2">
-                  Encrypted Connection
+                  {t("our_service.softeware.2")}
                 </li>
                 <li className="relative check custom-list my-2">
-                  No Traffic Logs
+                  {t("our_service.softeware.3")}
                 </li>
                 <li className="relative check custom-list my-2">
-                  Works on All Devices
+                  {t("our_service.softeware.4")}
                 </li>
                 <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
+                  {t("our_service.softeware.8")}
                 </li>
               </ul>
               {/* <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
@@ -106,22 +106,22 @@ const Pricing = () => {
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                 <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
+                  {t("our_service.softeware.1")}
                 </li>
                 <li className="relative check custom-list my-2">
-                  Encrypted Connection
+                  {t("our_service.softeware.2")}
                 </li>
                 <li className="relative check custom-list my-2">
-                  No Traffic Logs
+                  {t("our_service.softeware.3")}
                 </li>
                 <li className="relative check custom-list my-2">
-                  Works on All Devices
+                  {t("our_service.softeware.4")}
                 </li>
                 <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
+                  {t("our_service.softeware.5")}
                 </li>
                 <li className="relative check custom-list my-2">
-                  Get New Features{" "}
+                  {t("our_service.softeware.6")}
                 </li>
               </ul>
               {/* <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">

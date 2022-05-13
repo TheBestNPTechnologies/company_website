@@ -33,5 +33,17 @@
         "team_3" : "Software Developer",
         "team_4" : "Software Developer",
         "team_5" : "Software Developer"
-    }
+    },
+    "our_service": {
+        "softeware": {
+            "1": "Security",
+            "2": "Maintanance system",
+            "3": "Make a plan system",
+            "4": "Works on All Devices",
+            "5": "Works on Mobile Application",
+            "6": "Connect Anyware",
+            "7": "Unlimited Bandwitch",
+            "8": "Get New Features"
+        }
+    } 
 }
