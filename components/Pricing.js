@@ -6,23 +6,6 @@ import ButtonOutline from "./misc/ButtonOutline.";
 import Maps from "../public/assets/HugeGlobal.svg";
 import { useTranslation } from "next-i18next";
 
-import emailjs from "emailjs-com"
-
-export const ContactUs = () => {
-  const form = useRef();
-
-function sendEmail(e){
-  e.preventDefault();
-
-    emailjs.sendForm('gmail', 'template_oe1mvxo', form.current, 'Bpv3gzC3TfAvDVjxE')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      form.current.reset()
-}
-
 const Pricing = () => {
   const { t } = useTranslation("common");
 
