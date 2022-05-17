@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import Testimoni from "./Testimoni";
-import ButtonPrimary from "./misc/ButtonPrimary";
-import ButtonOutline from "./misc/ButtonOutline.";
-import Maps from "../public/assets/HugeGlobal.svg";
+import emailjs from '@emailjs/browser';
 import { useTranslation } from "next-i18next";
+import { message } from 'antd';
 
 const Pricing = () => {
   const { t } = useTranslation("common");
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_pw7ikdr', 'template_l3b9muk', form.current, 'ERYKK7SBsFeB0FaTo')
+      .then((result) => {
+          console.log("result : ",result.text);
+          message.success("Send Email Success!")
+      }, (error) => {
+          console.log(error.text);
+          message.error("Send Email Error!")
+
+      });
+  };
 
   return (
     <div
@@ -192,7 +205,7 @@ const Pricing = () => {
           Contact Us{" "}
         </h3>
         <div className="w-full lg:pl-40 lg:pr-40 sm:pr-0 sm:pl-0 flex justify-evenly w-full items-center mt-4 flex-wrap lg:flex-nowrap">
-          <form class="rounded-lg shadow-xl flex w-full flex-col px-8 py-8 bg-white dark:bg-blue-500">
+          <form ref={form} onSubmit={handleSubmit} class="rounded-lg shadow-xl flex w-full flex-col px-8 py-8 bg-white dark:bg-blue-500">
             <label
               for="fullname"
               class="text-gray-500 font-light mt-8 dark:text-gray-50"

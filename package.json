@@ -9,8 +9,13 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@fullhuman/postcss-purgecss": "^3.0.0",
-    "autoprefixer": "^10.0.4",
+    "antd": "^4.20.5",
+    "autoprefixer": "^10.4.7",
+    "browserslist": "^4.20.3",
+    "caniuse-lite": "^1.0.30001339",
+    "emailjs": "^4.0.0",
     "framer-motion": "^2.9.5",
     "i18n-next": "^0.0.4",
     "next": "10.0.3",
